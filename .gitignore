@@ -1,0 +1,7 @@
+.idea/
+.vs/
+obj/
+bin/
+*.user
+VVVoyage/global.json
+/VVVoyage/VVVoyage/VVVoyage.csproj.user

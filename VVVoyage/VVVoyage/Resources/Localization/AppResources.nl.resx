@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="App_Instructions" xml:space="preserve">
+    <value>Om een route te starten, klikt u eenvoudig op de routeknop in het hoofdmenuscherm. Vervolgens kunt u de gewenste route kiezen. De route gaat meteen van start! Volg de lijn op het scherm om bij het volgende oriëntatiepunt te komen. Je krijgt een melding zodra je in de buurt bent. De app geeft ook een nuttige naam en beschrijving voor het oriëntatiepunt. Bewonder de schoonheid ervan en bezoek vervolgens het volgende monument. De tour eindigt automatisch zodra je alle bezienswaardigheden van de route hebt bezocht.</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Terug</value>
+  </data>
+  <data name="Confirmation" xml:space="preserve">
+    <value>Confirmatie</value>
+  </data>
+  <data name="Ensure_Gps" xml:space="preserve">
+    <value>• Zorg ervoor dat de GPS-functionaliteit op uw telefoon werkt en dat deze app hier toegang toe heeft;</value>
+  </data>
+  <data name="Ensure_Permissions" xml:space="preserve">
+    <value>• Zorg ervoor dat de app toegang heeft tot de locatie, ook als de app niet actief is. Dus niet alleen tijdens het gebruik van de app, maar ook in de achtergrond.</value>
+  </data>
+  <data name="Ensure_Wifi" xml:space="preserve">
+    <value>• Zorg ervoor dat u tijdens de tour Wi-Fi of mobiele data gebruikt;</value>
+  </data>
+  <data name="General_Outline" xml:space="preserve">
+    <value>Algemeen overzicht</value>
+  </data>
+  <data name="Important" xml:space="preserve">
+    <value>Belangrijk</value>
+  </data>
+  <data name="Landmark_Default_Label" xml:space="preserve">
+    <value>Bezienswaardigheid</value>
+  </data>
+  <data name="Landmark_Progress_Message" xml:space="preserve">
+    <value>Je hebt voor het laatst een bezienswaardigheid bezocht op {0} met id {1}. Let op dat deze progressie niet zal worden geupdate op de kaart!</value>
+  </data>
+  <data name="Landmark_Progress_Title" xml:space="preserve">
+    <value>Bezienswaardigheid voortgang</value>
+  </data>
+  <data name="Location_Disabled_Message" xml:space="preserve">
+    <value>De rondleiding kan niet worden gestart, omdat de locatiediensten van de telefoon (inclusief GPS-diensten) zijn uitgeschakeld. Tip: schakel de locatiediensten opnieuw in door naar het menu Snelle Instellingen te gaan (vanaf de bovenkant naar beneden vegen) en de tegel met de naam 'Locatie' te activeren.</value>
+  </data>
+  <data name="Location_Disabled_Title" xml:space="preserve">
+    <value>Fout: locatie uitgeschakeld</value>
+  </data>
+  <data name="Location_Permission_Message" xml:space="preserve">
+    <value>GPS locatie toestemming is noodzakelijk voor het gebruik van deze app.</value>
+  </data>
+  <data name="Location_Permission_Title" xml:space="preserve">
+    <value>Toestemming nodig</value>
+  </data>
+  <data name="Navigation_Instruction" xml:space="preserve">
+    <value>Ga naar:</value>
+  </data>
+  <data name="Next_Landmark" xml:space="preserve">
+    <value>Volgende bezienswaardigheid</value>
+  </data>
+  <data name="Next_Sight" xml:space="preserve">
+    <value>Volgende bezienswaardigheid:</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nee</value>
+  </data>
+  <data name="No_Internet_Continue" xml:space="preserve">
+    <value>Doorgaan met tour</value>
+  </data>
+  <data name="No_Internet_Message" xml:space="preserve">
+    <value>Het lijkt erop alsof u geen internetverbinding heeft! Dit kan gebeuren wanneer u switcht tussen Wi-Fi-netwerken, of wanneer u switcht van Wi-Fi naar mobiele data. Doorgaan met de tour kan helpen.</value>
+  </data>
+  <data name="No_Internet_Stop" xml:space="preserve">
+    <value>Tour stoppen</value>
+  </data>
+  <data name="No_Internet_Title" xml:space="preserve">
+    <value>Geen internet</value>
+  </data>
+  <data name="No_Location_Support_Message" xml:space="preserve">
+    <value>De app kan niet werken op deze telefoon, aangezien het geen GPS of locatiefunctionaliteiten heeft.</value>
+  </data>
+  <data name="No_Location_Support_Title" xml:space="preserve">
+    <value>GPS niet ondersteund</value>
+  </data>
+  <data name="Phone_Too_Far_Away_Message" xml:space="preserve">
+    <value>De tour kan niet gestart worden, omdat de telefoon te ver weg is van Breda! Tip: als je een emulator gebruikt, stel de emulatorlocatie dan ergens in Breda in de emulatorinstellingen in.</value>
+  </data>
+  <data name="Phone_Too_Far_Away_Title" xml:space="preserve">
+    <value>Fout: te ver weg</value>
+  </data>
+  <data name="Random_Tour_Description" xml:space="preserve">
+    <value>Kun je niet beslissen welke tour je wilt nemen? Laat de app beslissen welke tour het wordt.</value>
+  </data>
+  <data name="Random_Tour_Name" xml:space="preserve">
+    <value>Willekeurige tour</value>
+  </data>
+  <data name="Scroll_Page_Instruction" xml:space="preserve">
+    <value>▼ Scrol om meer te zien ▼</value>
+  </data>
+  <data name="Select_Instruction" xml:space="preserve">
+    <value>Selecteren</value>
+  </data>
+  <data name="Select_Tour" xml:space="preserve">
+    <value>Kies een tour</value>
+  </data>
+  <data name="Stop_Route_Confirmation" xml:space="preserve">
+    <value>Weet u zeker dat u wilt stoppen met het volgen van de tour? Alle progressie zal verloren gaan!</value>
+  </data>
+  <data name="Tour_End_Message" xml:space="preserve">
+    <value>U heeft de tour beëindigd! Wij hopen dat u een fantastische ervaring heeft gehad!</value>
+  </data>
+  <data name="Tour_End_Title" xml:space="preserve">
+    <value>Tour afgerond!</value>
+  </data>
+  <data name="Warning_Close" xml:space="preserve">
+    <value>• Als u de app sluit terwijl u de rondleiding doet, wordt de rondleiding stopgezet.</value>
+  </data>
+  <data name="Welcome_Message" xml:space="preserve">
+    <value>Welkom bij VVVoyage, jouw rondreisgids door Breda!</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+</root>

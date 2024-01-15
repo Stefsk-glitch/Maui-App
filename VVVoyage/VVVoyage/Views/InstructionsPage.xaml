@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lang="clr-namespace:VVVoyage.Resources.Localization"
+             x:Class="VVVoyage.Views.InstructionsPage"
+             Title="InstructionsPage">
+
+    <ContentPage.Resources>
+        <Style x:Key="InstructionBody"
+               TargetType="Label">
+            <Setter Property="FontSize" Value="Medium" />
+        </Style>
+    </ContentPage.Resources>
+    
+    <Grid Margin="15, 20, 15, 0" RowDefinitions="Auto, *, Auto">
+        <VerticalStackLayout Spacing="20">
+            <Grid ColumnDefinitions="*,*">
+                <Button
+                    Grid.Column="0"
+                    HorizontalOptions="Start"
+                    ImageSource="back_arrow.svg"
+                    Text="{x:Static lang:AppResources.Back}"
+                    TextColor="Black"
+                    HeightRequest="40"
+                    BackgroundColor="{StaticResource Secondary}"
+                    CornerRadius="8"
+                    Clicked="BackBtn_Clicked"/>
+
+                <HorizontalStackLayout Grid.Column="1" HorizontalOptions="End">
+                    <Image 
+                        HorizontalOptions="End"
+                        WidthRequest="40"
+                        Source="vvv_logo.svg"/>
+
+                    <Image
+                        HorizontalOptions="End"
+                        WidthRequest="40"
+                        Source="ags_logo.png" />
+                </HorizontalStackLayout>
+            </Grid>
+
+            <BoxView
+                Color="{AppThemeBinding Light={StaticResource Gray100}, Dark={StaticResource Gray600}}"
+                HeightRequest="2"
+                Margin="0,0,0,20"
+                VerticalOptions="Center"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout>
+                <Label
+                    Style="{StaticResource SubHeadline}"
+                    Text="{x:Static lang:AppResources.Welcome_Message}"
+                    VerticalOptions="Center" 
+                    FontAttributes="Italic"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,10"/>
+
+                <Label
+                    Style="{StaticResource Headline}"
+                    Text="{x:Static lang:AppResources.General_Outline}"
+                    Margin="0,0,0,5"/>
+
+                <Label
+                    Style="{StaticResource InstructionBody}"
+                    Margin="0,0,0,20"
+                    Text="{x:Static lang:AppResources.App_Instructions}" />
+
+                <Label
+                    Style="{StaticResource Headline}"
+                    Text="{x:Static lang:AppResources.Important}"
+                    Margin="0,0,0,5"/>
+
+                <Label
+                    Style="{StaticResource InstructionBody}"
+                    Text="{x:Static lang:AppResources.Ensure_Gps}" />
+
+                <Label
+                    Style="{StaticResource InstructionBody}"
+                    Text="{x:Static lang:AppResources.Ensure_Wifi}" />
+
+                <Label
+                    Style="{StaticResource InstructionBody}"
+                    Text="{x:Static lang:AppResources.Warning_Close}" />
+
+                <Label
+                    Style="{StaticResource InstructionBody}"
+                    Text="{x:Static lang:AppResources.Ensure_Permissions}" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <HorizontalStackLayout Grid.Row="2" HorizontalOptions="Center">
+            <Label
+                Text="{x:Static lang:AppResources.Scroll_Page_Instruction}"
+                TextColor="{StaticResource Gray400}"/>
+        </HorizontalStackLayout>
+    </Grid>
+</ContentPage>

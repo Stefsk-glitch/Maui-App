@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:maps="clr-namespace:Microsoft.Maui.Controls.Maps;assembly=Microsoft.Maui.Controls.Maps"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VVVoyage.MainPage"
+             x:DataType="viewModel:RootPageViewModel"
+             xmlns:viewModel="clr-namespace:VVVoyage.ViewModels"
+             xmlns:lang="clr-namespace:VVVoyage.Resources.Localization">
+
+    <Grid RowDefinitions="Auto, Auto, *">
+        <StackLayout Grid.Row="0" Grid.RowSpan="3" x:Name="mapContainer" HorizontalOptions="Center" VerticalOptions="Center">
+            <ActivityIndicator IsRunning="True"/>
+        </StackLayout>
+
+        <HorizontalStackLayout
+            x:Name="nextLandmarkView"
+            Grid.Row="0"
+            Spacing="10"
+            Margin="10"
+            HorizontalOptions="Start">
+
+            <Border
+                VerticalOptions="Start"
+                MaximumWidthRequest="130"
+                MaximumHeightRequest="130"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 10">
+                <Image
+                    Aspect="AspectFit"
+                    Source="{Binding ImageString}" />
+            </Border>
+
+            <Border
+                VerticalOptions="Start"
+                StrokeThickness="0"
+                MaximumWidthRequest="150"
+                MaximumHeightRequest="150"
+                StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout
+                    Padding="10"
+                    BackgroundColor="{StaticResource Secondary}">
+                    <Label
+                        Text="{x:Static lang:AppResources.Navigation_Instruction}"
+                        TextColor="Black"
+                        FontAttributes="Bold"/>
+
+                    <Label
+                        Text="{Binding LandmarkName}"
+                        TextColor="Black"
+                        />
+                </VerticalStackLayout>
+
+            </Border>
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout
+            x:Name="buttonsView"
+            Grid.Row="0"
+            Margin="0,65,10,0" 
+            Spacing="15" 
+            HorizontalOptions="End">
+            <Button
+                x:Name="instructionsBtn"
+                IsEnabled="False"
+                VerticalOptions="Start"
+                ImageSource="help_circle.svg"
+                Clicked="InstructionsButton_Clicked"
+                BackgroundColor="{StaticResource Primary}"
+                Text="Help"
+                TextColor="White"/>
+
+            <Button
+                x:Name="stopRouteBtn"
+                IsEnabled="False"
+                VerticalOptions="Start"
+                Text="Stop tour"
+                Clicked="StopRouteButton_Clicked"
+                BackgroundColor="DarkRed"
+                TextColor="White"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
